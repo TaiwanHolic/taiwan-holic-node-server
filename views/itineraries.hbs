@@ -1,0 +1,93 @@
+<link rel="stylesheet" href="stylesheets/itineraries.css">
+<div class="wrapper row3">
+    <section class="hoc container clear">
+
+        {{!--
+        <header class="title center">Itinerary Searching</header>--}}
+        <h2 class="page-title">Itinerary Searching</h2>
+
+        <!-- Feature Bar -->
+        <div id="featurebar" class="btmspace-30">
+            <nav class="center">
+                <ul class="clear">
+                    <li><a href="city/northern">Northern Taiwan</a></li>
+                    <li><a href="city/mid">Mid-Taiwan</a></li>
+                    <li><a href="city/southern">Southern Taiwan</a></li>
+                    <li><a href="city/eastern">Eastern Taiwan</a></li>
+                    <!-- <li><a href="Offshorw Island.html">Offshore Island</a></li> -->
+                </ul>
+            </nav>
+        </div>
+
+        <div class="row">
+            <div id="itinerary-list" class="col-sm-9">
+                <form id="search-itinerary">
+                    <p id="cubetitle" style="width: 76px;">Filter by</p>
+                    <select name="area">
+                        <option value="">District</option>
+                        <option value="Northern">Northern Taiwan</option>
+                        <option value="Mid -">Mid - Taiwan</option>
+                        <option value="Southern">Southern Taiwan</option>
+                        <option value="Eastern">Eastern Taiwan</option>
+                    </select>
+                    <select name="day">
+                        <option value="">Days</option>
+                        <option value="1">Day1</option>
+                        <option value="2">Day2</option>
+                        <option value="3">Day3</option>
+                        <option value="4">Day4</option>
+                        <option value="5">Day5</option>
+                    </select>
+                    <button id="send-search">Search</button>
+                </form>
+                {{#each itineraries}}
+                <div class="itinerary">
+                    <div class="thumbnail">
+                        <a href="itinerary/{{this.id}}">
+                            <img src="{{this.photo_url}}">
+                        </a>
+                    </div>
+                    <div class="info">
+                        <div class="itinerary-title">
+                            <span class="name">{{this.name}}</span>
+                            <span class="days">{{this.day}} Days</span>
+                        </div>
+                        <div class="tags">
+                            <span class="glyphicon glyphicon-tag"></span>
+                            <span>{{arrayToString this.tags}}</span>
+                        </div>
+                        <div class="calendar">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                            <span>{{this.day}} days</span>
+                            <span>{{this.suggest_time}}</span>
+                        </div>
+                        <div class="address">
+                            <span class="glyphicon glyphicon-map-marker"></span>
+                            <span>{{this.city}}</span>
+                            <span>{{this.area}}&nbsp;Taiwan</span>
+                        </div>
+                        <div class="action">
+                            <div class="bookmark">
+                                <span class="glyphicon glyphicon-bookmark"></span>
+                                <span class="pointer">Add To List</span>
+                            </div>
+                            <div class="read-more">
+                                <span class="pointer">Read More</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+
+            <div id="recommend" class="col-sm-3">
+                <p id="cubetitle" style="width: 176px;">Recommend for you</p>
+                <div class="recommend">
+                    <a href="#">
+                        <img src="images/test.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

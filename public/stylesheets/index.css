@@ -1,0 +1,179 @@
+.bgded .center {
+    margin-top: 0px;
+}
+
+.bgded .signup {
+    opacity: 1;
+    margin-top: -30px;
+}
+
+.owl-carousel .item {
+    position: relative;
+    opacity: 0.7;
+    transition: opacity 500ms ease;
+    cursor: pointer;
+}
+
+.owl-carousel .item:hover {
+    opacity: 1;
+}
+
+.owl-carousel .item .hint {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.signup {
+    background-color: #133D7B;
+    color: #FFFFFF;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    opacity: 0.8;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.signup:hover {
+    text-decoration: none;
+    color: #fff;
+    opacity: 1;
+}
+
+.signup:focus {
+    background-color: #133D7B;
+    color: #fff;
+    opacity: 1;
+}
+
+
+/* comment */
+
+#comments {
+    background-color: #eaeaea;
+}
+
+.flex-justify {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.flex-justify .comment {
+    background: #fff;
+    margin: 0px 10px;
+    flex: 1;
+    align-self: flex-end;
+    height: 350px;
+    position: relative;
+}
+
+.comment .title {
+    font-size: 1.125em;
+    font-weight: 500;
+    margin: 5px 0px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0px;
+}
+
+.comment .content {
+    padding: 10px;
+}
+
+.comment .footer {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, 0%);
+}
+
+.comment .footer img {
+    border: 1px solid #E0E0E0;
+    padding: 3px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.comment .footer div {
+    display: inline;
+    margin: 0px 3px;
+}
+
+.comment .footer .username {
+    font-weight: 600;
+    color: #133D7B;
+}
+
+.comment .footer .stars {
+    color: #EDD353;
+}
+
+
+/* community */
+
+#communities {
+    background-image: url('../images/index_community.jpg');
+    background-size: cover;
+}
+
+.question {
+    flex: 1;
+    background: #fff;
+    margin: 0px 15px;
+    padding: 30px 50px;
+    position: relative;
+}
+
+.question p {
+    text-align: left;
+}
+
+.question .title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    letter-spacing: 0px;
+    font-weight: 300px;
+    margin: 10px 0px 20px 0px;
+    padding-top: 10px;
+    border-top: 5px solid #133D7B;
+}
+
+.question .content {
+    margin-bottom: 50px;
+}
+
+.question .footer {
+    text-align: left;
+    position: absolute;
+    height: 40px;
+    bottom: 20px;
+    width: 80%;
+}
+
+.question .footer div {
+    display: inline;
+}
+
+.question .footer img {
+    border: 1px solid #E0E0E0;
+    padding: 3px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.question .footer .datetime {
+    float: right;
+    position: relative;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

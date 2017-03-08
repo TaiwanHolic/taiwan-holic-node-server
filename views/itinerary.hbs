@@ -1,0 +1,88 @@
+<link rel="stylesheet" href="stylesheets/itinerary.css">
+<div class="cover" style="background-image: url('{{itinerary.banner_url}}')">
+    <div class="cover-title">
+        <h2>{{itinerary.name}}</h2>
+    </div>
+</div>
+
+<div class="info hoc">
+    <div class="basic-info">
+        <div class="area-title">
+            basic info
+        </div>
+        <div class="info-content">
+            <div class="stars">
+                {{#each (toEmptyArray itinerary.stars)}}
+                <i class="fa fa-star"></i> {{/each}}
+            </div>
+            <div class="tags">
+                <span class="glyphicon glyphicon-tag"></span>
+                <span>{{arrayToString itinerary.tags}}</span>
+            </div>
+            <div class="calendar">
+                <span class="glyphicon glyphicon-calendar"></span>
+                <span>{{itinerary.day}} days</span>
+                <span>{{itinerary.suggest_time}}</span>
+            </div>
+            <div class="address">
+                <span class="glyphicon glyphicon-map-marker"></span>
+                <span>{{itinerary.city}}</span>
+                <span>{{itinerary.area}}&nbsp;Taiwan</span>
+            </div>
+            <div class="action">
+                <div class="bookmark">
+                    <span class="glyphicon glyphicon-bookmark"></span>
+                    <span class="pointer">Add To List</span>
+                </div>
+                <div class="">
+                    <span>|</span>
+                    <span class="glyphicon glyphicon-comment"></span>
+                    <span class="pointer">Comment</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pictures">
+        <div class="area-title">
+            pictures
+        </div>
+        {{#each itinerary.pictures}}
+        <div class="picture">
+            <img src="{{this}}">
+        </div>
+        {{/each}}
+    </div>
+</div>
+
+<div class="overview">
+    <div class="hoc">
+        <div class="introduce">
+            <h1>Overview</h2>
+            <p>{{itinerary.overview}}<p>
+        </div>
+
+        <div class="equipment">
+            <h1>Equipment</h2>
+            {{#if (itinerary.book_url)}}
+            <a href="{{itinerary.book_url}}" class="book">book package</a>
+            {{else}}
+            <p>This itenarary doesn't have a package to go alone with.</p>
+            {{/if}}
+        </div>
+    </div>
+</div>
+
+<div class="download-area hoc">
+    <iframe src="{{itinerary.file}}"></iframe>
+    <a href="{{itinerary.file}}" target="_blank">
+        <button>Open a new Tab to Read</button>
+    </a>
+</div>
+
+<div class="comments hoc">
+    <div class="area-title">
+        Comments
+    </div>
+    Coming soon...
+</div>

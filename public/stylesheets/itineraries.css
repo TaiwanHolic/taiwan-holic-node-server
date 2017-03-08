@@ -1,0 +1,60 @@
+#search-itinerary select,
+#search-itinerary button {
+    display: inline-block;
+}
+
+#search-itinerary button {
+    border: none;
+    background-color: #143c7a;
+    color: white;
+    height: 29px;
+    width: 70px;
+}
+
+
+/* itinerary */
+
+.itinerary {
+    border: 1px solid #bbb;
+    padding: 10px;
+    color: #000;
+    background-color: #fff;
+    margin: 5px 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.itinerary-title {
+    font-size: 1.125em;
+    font-weight: bold;
+    margin: 1em 0px;
+}
+
+.itinerary .thumbnail {
+    margin-bottom: 0px;
+}
+
+.itinerary .info {
+    margin-left: 2em;
+}
+
+.itinerary .glyphicon {
+    margin-right: 0.5em;
+}
+
+.itinerary .action {
+    display: flex;
+}
+
+.itinerary .action .read-more {
+    margin-left: 0.5em;
+    border-left: 2px solid #000;
+    padding-left: 0.5em;
+}
+
+
+/*bookmark*/
+
+
+/*read-more*/

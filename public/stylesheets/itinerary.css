@@ -1,0 +1,115 @@
+.cover {
+    height: 270px;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover-title h2 {
+    font-size: 2.5em;
+    color: white;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+.basic-info {
+    flex: 2;
+    margin-right: 2.5em;
+}
+
+.basic-info .info-content {
+    padding: 30px;
+    line-height: 2em;
+}
+
+.basic-info .info-content .action {
+    display: flex;
+}
+
+.basic-info .info-content .action div:last-child {
+    padding-left: 0.5em;
+}
+
+.pictures {
+    flex: 1;
+}
+
+.pictures .picture {
+    margin: 10px;
+}
+
+.area-title {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100%;
+    padding-bottom: 5px;
+    border-bottom: 3px solid black;
+}
+
+.overview {
+    padding: 80px;
+    background-image: url('../images/overview.jpg');
+}
+
+.overview h1 {
+    font-size: 2.5em;
+    font-family: sans-serif;
+    margin-bottom: 0px;
+}
+
+.overview .hoc {
+    display: flex;
+    justify-content: space-between;
+}
+
+.overview .introduce,
+.overview .equipment {
+    background-color: black;
+    color: white;
+    padding: 30px;
+    line-height: 30px;
+    height: 320px;
+}
+
+.overview .introduce {
+    flex: 2;
+    margin-right: 2em;
+}
+
+.overview .equipment {
+    flex: 1;
+}
+
+.download-area {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.download-area iframe {
+    width: 100%;
+    min-height: 600px;
+}
+
+.download-area button {
+    display: inline;
+    margin-top: 10px;
+    color: white;
+    background-color: #133D7B;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    border: 0px;
+}
+
+.comments {
+    padding: 40px 0;
+}

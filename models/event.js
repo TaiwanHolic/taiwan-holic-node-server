@@ -1,10 +1,10 @@
 var mongoose = require('mongoose');
 
-var Event = mongoose.Schema({
+var eventSchema = mongoose.Schema({
     datetime: String,
     name: String,
     comment: String,
 });
-var Event = mongoose.model('events', Event);
+var Event = mongoose.model('events', eventSchema);
 
 module.exports = Event;
