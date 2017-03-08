@@ -17,16 +17,27 @@ if (process.env.VCAP_SERVICES) {
         mongo = env[dbLabel][0].credentials;
     }
 } else {
+    // mongo = {
+    //     db: 'test',
+    //     host: 'localhost',
+    //     password: 'password',
+    //     port: 27017,
+    //     ssl: false,
+    //     url: 'mongodb://localhost:27017/test',
+    //     username: 'root',
+    // };
     mongo = {
-        db: 'test',
-        host: 'localhost',
-        password: 'password',
-        port: 27017,
+        db: 'taiwan_holic_beta',
+        host: 'ds161029.mlab.com',
+        password: 'taiwan',
+        port: 61029,
         ssl: false,
-        url: 'mongodb://localhost:27017/test',
-        username: 'root',
+        url: 'mongodb://admin:taiwan@ds161029.mlab.com:61029/taiwan_holic_beta',
+        username: 'admin',
     };
 }
+// mongoose.connect(`mongodb://admin:taiwan@ds161029.mlab.com:61029/taiwan_holic_beta`);
+
 
 var meConfigMongodbServer = process.env.ME_CONFIG_MONGODB_SERVER ? process.env.ME_CONFIG_MONGODB_SERVER.split(',') : false;
 
