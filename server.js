@@ -20,9 +20,9 @@ app.use('/', express.static(path.join(__dirname, 'public'))); // 設定靜態檔
 /**
  * 設定資料庫和 GUI 
  */
-var mongo_express = require('mongo-express/lib/middleware')
-var mongo_express_config = require('./mongo_express_config')
-app.use('/mongo_express', mongo_express(mongo_express_config));
+// var mongo_express = require('mongo-express/lib/middleware')
+// var mongo_express_config = require('./mongo_express_config')
+// app.use('/mongo_express', mongo_express(mongo_express_config));
 
 // 取得 API 的路徑，暫時用不到
 // const api = require('./server/routes/api');
