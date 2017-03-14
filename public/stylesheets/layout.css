@@ -989,21 +989,8 @@ select {
 
 /* Transportation */
 
-#trans {
-    background-color: #FFFFFF;
-    color: #BBBBBB;
-    padding: 20px;
-}
-
 #trans a:hover {
     opacity: 0.7;
-}
-
-#transtitle {
-    font-family: 'Open Sans Condensed', sans-serif;
-    color: #757575;
-    font-size: 25px;
-    text-align: center;
 }
 
 #airport {

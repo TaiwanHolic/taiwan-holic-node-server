@@ -1,0 +1,16 @@
+h2.page-title {
+    font-size: 4em;
+}
+
+.city-title {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: #757575;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 2em;
+    text-align: center;
+}
+
+.city-paragraph {
+    color: #666;
+}

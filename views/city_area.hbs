@@ -1,0 +1,77 @@
+<link rel="stylesheet" href="stylesheets/city.css">
+
+<div class='hoc'>
+    <div>
+        <h2 class="page-title">{{area}} Taiwan</h2>
+    </div>
+
+    <div class="nav-area">
+        <ul>
+            <li><a href="northern">Northern Taiwan</a></li>
+            <li><a href="mid">Mid Taiwan</a></li>
+            <li><a href="southern">Southern Taiwan</a></li>
+            <li><a href="estern">Estern Taiwan</a></li>
+        </ul>
+    </div>
+
+    <div id="city-activities" class="hoc">
+        <div class="city-activity">
+            <a href="{{area}}/food">
+                <img src="images/food.png">
+            </a>
+        </div>
+        <div class="city-activity">
+            <a href="{{area}}/fun">
+                <img src="images/fun.png">
+            </a>
+        </div>
+        <div class="city-activity">
+            <a href="{{area}}/stay">
+                <img src="images/stay.png">
+            </a>
+        </div>
+        <div class="city-activity">
+            <a href="{{area}}/trans">
+                <img src="images/trans.png">
+            </a>
+        </div>
+    </div>
+
+    <div id="foods" class="wrapper row3">
+        <section class="hoc clear container">
+            <p class="indextitle center btmspace-50">RECOMMENDED FOODS</p>
+            <div class="flex-justify">
+            {{#each restaurants}}
+            <div class="flex-item food">
+                <div class="photo">
+                    <img src="{{this.photo_url}}">
+                </div>
+                <div class="name">{{this.name}}</div>
+                <div class="stars">
+                    {{#each (toEmptyArray this.stars)}}
+                    <i class="fa fa-star"></i> {{/each}}
+                </div>
+                <div class="tags">
+                    <span class="glyphicon glyphicon-tag"></span>
+                    {{arrayToString this.tags}}
+                </div>
+                <div class="phone">
+                    <span class="glyphicon glyphicon-earphone"></span>
+                    {{this.tellphone}}
+                </div>
+                <div class="action">
+                    <button class="to-list">
+                        <span class="glyphicon glyphicon-bookmark"></span>Add To List
+                    </button>
+                    <a class="to-read" href="#">
+                        <span class="glyphicon glyphicon-play"></span>Read More
+                    </a>
+                </div>
+            </div>
+            {{/each}}
+            </div>
+        </section>
+    </div>
+
+
+</div>
